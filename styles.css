@@ -1,0 +1,328 @@
+/* Body dan Umum */
+body {
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-bar select, .top-bar, .account-dropdown {
+    margin-left: 0px;
+    color: white;
+    background-color: #333;
+    border: none;
+    font-size: 20px;
+}
+
+.main-nav {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 15px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 20px;
+    font-size: 25px;
+    position: relative;
+    color: #000;
+}
+
+.cart-icon .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: rgb(150, 11, 11);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+/* Header dan Navigasi */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5F9EA0;
+    color: #fff;
+    padding: 60px;
+    position: sticky; /* Tetap di atas saat di-scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.0em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease; /* Animasi warna */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #00ced1;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 20cm;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Section Umum */
+.section {
+    padding: 20px 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #f8f8f8; /* Warna latar belakang */
+    font-size: 30px;
+}
+
+.section h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cards {
+    display: flex; /* Atur card berjajar horizontal */
+    gap: 20px; /* Jarak antar card */
+    justify-content: center; /* Pusatkan card */
+    flex-wrap: wrap; /* Agar tetap rapi jika layar kecil */
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Ukuran setiap card */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Gerakkan card sedikit ke atas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
+}
+
+.card img {
+    width: 100%; /* Gambar sesuai ukuran card */
+    height: 200px; /* Tinggi gambar */
+    object-fit: cover; /* Proporsi gambar */
+    transition: transform 0.3s ease; /* Animasi untuk gambar */
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Zoom gambar saat hover */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 15px;
+    color: #333;
+    transition: color 0.3s ease; /* Animasi warna teks */
+}
+
+.card:hover h3 {
+    color: #007bff; /* Ubah warna teks saat hover */
+}
+
+.card p {
+    margin: 0 15px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+#about-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+#about-us h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#about-us p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Form Contact Us */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#contact form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#contact form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5F9EA0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #4682B4;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 18px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

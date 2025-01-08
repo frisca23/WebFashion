@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <span>Fashion Elegan, Modern dan Stylish</span>
+                <div class="top-bar-right">
+                    <select id="currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RP">RP</option>
+                    </select>
+                    <select id="language">
+                        <option value="English">English</option>
+                        <option value="Bahasa">Bahasa</option>
+                        <option value="Spanish">Spanish</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="#" class="logo">FRISHOP</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Fashion</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="icons">
+                    <a href="#" class="icon search-icon">&#128269;</a>
+                    <a href="#" class="icon cart-icon">
+                        &#128722;<span class="cart-count">2</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div id="home" class="banner">
+        <img src="images/back.png" alt="Banner">
+        <h1>Dapatkan diskon hingga <br>30% untuk produk terbaru</h1>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us" class="section">
+        <h2>ABOUT US</h2>
+        <p>"FRISHOP" adalah platform yang didedikasikan untuk menyediakan inspirasi gaya terkini bagi semua kalangan. Kami percaya bahwa fashion adalah cara untuk mengekspresikan diri dan menemukan kepercayaan diri.<br>
+            Dengan koleksi yang mencakup berbagai gaya, mulai dari high street hingga vintage, kami berkomitmen untuk menghadirkan tren fashion terbaru yang dapat diakses oleh semua orang.<br>
+            Tim kami terdiri dari individu yang kreatif dan bersemangat, selalu siap untuk membantu Anda menemukan gaya yang sesuai dengan kepribadian Anda. Terima kasih telah mempercayai "FRISHOP" sebagai mitra perjalanan fashion Anda</p>
+    </div>
+    
+    <!-- Fashion Section -->
+    <div id="fashion" class="section">
+        <h2>FASHION</h2>
+        <h2>Wanita</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/street.png" alt="Fashion 1">
+                <h3>High Street Fashion</h3>
+                <p>Gaya fashion yang trendy dan mudah ditemui.</p>
+            </div>
+            <div class="card">
+                <img src="images/fast.png" alt="Fashion 2">
+                <h3>Fast Fashion</h3>
+                <p>Gaya fashion yang tren terkini.</p>
+            </div>
+            <div class="card">
+                <img src="images/vintage.png" alt="Fashion 3">
+                <h3>Vintage dan Retro Fashion</h3>
+                <p>Gaya fashion masa lalu yang diadaptasi.</p>
+            </div>
+            <div class="card">
+                <img src="images/high.png" alt="Fashion 4">
+                <h3>Luxury Fashion</h3>
+                <p>Gaya fashion mewah dan eksklusif.</p>
+            </div>
+        </div>
+    </div>
+    <div id="fashion" class="section">
+        <h2>Pria</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/fast2.png" alt="Fashion 1">
+                <h3>High Street Fashion</h3>
+                <p>Gaya fashion yang trendy dan mudah ditemui.</p>
+            </div>
+            <div class="card">
+                <img src="images/high2.png" alt="Fashion 2">
+                <h3>Fast Fashion</h3>
+                <p>Gaya fashion yang tren terkini.</p>
+            </div>
+            <div class="card">
+                <img src="images/vintage2.png" alt="Fashion 3">
+                <h3>Vintage dan Retro Fashion</h3>
+                <p>Gaya fashion masa lalu yang diadaptasi.</p>
+            </div>
+            <div class="card">
+                <img src="images/uxury2.png" alt="Fashion 4">
+                <h3>Luxury Fashion</h3>
+                <p>Gaya fashion mewah dan eksklusif.</p>
+            </div>
+        </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fashion Haven. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
